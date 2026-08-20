@@ -1,0 +1,18 @@
+machine: ANT-M1
+version: 1.0.0
+
+temporal_horizons:
+  - 3
+  - 7
+  - 23
+
+graph:
+  directed: true
+  lagged: true
+
+primary_metric:
+  name: brier_score
+  comparison: ant_vs_node_only
+
+freeze:
+  hash: sha256
